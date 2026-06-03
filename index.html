@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE HTML>
+<html dir="rtl" lang="ar">
+<head>
+    <title>TechMaze</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="data/main.js" defer></script>
+</head>
+<body>
+
+<header id ="mainHead">
+</header>
+<div id="posts" class="container"></div>
+
+<script>
+// جلب  المقالات
+fetch('data/posts.json')
+  .then(res => res.json())
+  .then(posts => {
+    const container = document.getElementById('posts');
+    posts.forEach(post => {
+      const card = document.createElement('div');
+      card.className = 'card'; // أضفنا الكلاس هنا ليعمل التصميم
+      card.innerHTML = `
+        <div class="img-box">
+          <img src="${post.image}" alt="${post.title}">
+        </div>
+        <h3>${post.title}</h3>
+        <p>${post.description}</p>
+        <small>${post.category}</small>
+      `;
+      card.onclick = () => { window.location.href = post.url; };
+      container.appendChild(card);
+    });
+  })
+  .catch(err => console.error("خطأ في جلب البيانات:", err));
+</script>
+</body>
+</html>
+>
+</body>
+</html>

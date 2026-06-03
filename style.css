@@ -1,0 +1,133 @@
+
+body {
+    text-align: right;
+    direction: rtl;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img.logo {
+    width: 160px; /* حجم شعار مناسب */
+    
+  
+}
+
+#menuToggle {
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    width: 40%;
+    
+    background-color:#252525;
+    color: white;
+    display: none;
+    flex-direction: column;
+    border-radius:8px 0 0 8px;
+}
+    
+
+.dropdown-menu.active { display: flex; }
+
+.dropdown-menu a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+/* حاوية المقالات */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  
+    
+}
+
+.card {
+  
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.img-box {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* التجاوب للشاشات الكبيرة */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+#nav
+{
+  width:40px;
+  height:40px;
+    
+}
+.post
+{
+  background-color: white;
+  padding:4%;
+  font-size:16px;
+}
+  
+html
+{
+text-direction:rtl;
+text-align:right;
+font-family:"my font"
+}
+@font-face
+{
+font-family: "my font";
+src: url("AraAlmBon.otf");
+}     
+small
+{
+  border-style:solid;
+  border-color:#eaeaea;
+  background-color:#eaeaea;
+  border-radius:50px;
+  padding:1%;
+  margin:1%;
+}
