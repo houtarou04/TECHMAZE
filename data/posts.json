@@ -1,0 +1,23 @@
+[
+  {
+    "title": "التشفير وكل ما يخصه",
+    "description": "تعرف الى كيف تحمي ملفاتك في ظل التطور الرقمي ",
+    "image": "data/images/1.png",
+    "url": "data/posts/encryption.html",
+    "category": "programming"
+  },
+  {
+    "title": "الحوسبة الكمومية",
+    "description": "تعرف الفرق بين الحوسبة التقليدية و الحوسبة الكمومية و اعرف الى أين يتجه العالم",
+    "image": "data/images/2.jpg",
+    "url": "data/posts/quantum_computing.html",
+    "category": "programming"
+  },
+  {
+    "title": "الربح من الانترنت ",
+    "description": "في مقالة واحدة جميع الطرق للربح من الانترنت ",
+    "image": "data/images/3.jpg",
+    "url": "data//post/third-post.html",
+    "category": ""
+  }
+]
